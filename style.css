@@ -42,6 +42,11 @@ a{
   border: 2px solid var(--primary-color);
 }
 
+input::placeholder{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
 /* ------------------------------- NAV BAR -------------------------------- */
 
 .navbar {
@@ -82,13 +87,6 @@ a{
 
 .login-btn:hover {
   background-color: #04081be2;
-}
-
-/* ------------------- LINEAR GRADIENT ----------------------- */
-
-.linear-gradient{
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 59.63%, rgba(194, 208, 248, 0.5) 100%);
-
 }
 
 /* ------------------------ WELCOME CONTAINER -------------------- */
@@ -177,6 +175,23 @@ h1 span {
 
 
 /* =========================================== SCHOOL LOGIN ============================================ */
+
+.school-login-inputs p{
+  color: var(--secondary-text-color);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.school-rememberMe-forgotPw .arrow{
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 40px;
+  border-radius: 2px;
+  width: 1rem;
+  height: 1rem;
+  background-color: #000;
+  color: #fff;
+}
 
 .school-login-content{
   width: 100vw;
@@ -273,7 +288,6 @@ h1 span {
   color: var(--secondary-text-color);
   font-size: 0.8rem;
 }
-
 
 .school-login-popup .school-rememberMe-forgotPw{
   width: 100%;
