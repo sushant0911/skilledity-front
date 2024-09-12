@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Details</title>
+    <script
+      src="https://kit.fontawesome.com/e2a5af85b3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-content">
+        <div class="navbar-brand">
+          <img src="assets/images/Group 44.png" alt="Skilledity" />
+        </div>
+        <button class="login-btn">Login</button>
+      </div>
+    </nav>
+    <div class="studentDetails-container">
+      <div class="studentDetails-title">
+        <h1>Welcome <span>aboard!</span></h1>
+        <p>Select the class & section to proceed</p>
+      </div>
+      <div class="studentDetails-form-group">
+        <div class="studentDetails-form-control" id="class-input">
+          <div class="select-menu">
+            <label for="class">Class</label>
+            <div class="select-btn">
+              <span class="sBtn-text">Select your option</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <ul class="options">
+              <li class="option">
+                <span class="option-text">6<sup>th</sup> Class</span>
+              </li>
+              <li class="option">
+                <span class="option-text">7<sup>th</sup> Class</span>
+              </li>
+              <li class="option">
+                <span class="option-text">8<sup>th</sup> Class</span>
+              </li>
+              <li class="option">
+                <span class="option-text">9<sup>th</sup> Class</span>
+              </li>
+              <li class="option">
+                <span class="option-text">10<sup>th</sup> Class</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="studentDetails-form-control">
+          <div class="section-select">
+            <label for="section">Section</label>
+            <input
+            type="text"
+            id="studentDetails-section"
+            placeholder="Enter the section"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="proceed-btn-container">
+        <button class="studentDetails-proceed-btn">
+          <span class="text">Proceed</span>
+          <span class="icon"><i class="fa-solid fa-chevron-right"></i></span>
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
