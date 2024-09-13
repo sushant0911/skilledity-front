@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --primary-color : #55679C;
+  --btn-color : #04081B;
+  --primary-text-color : #000000;
+  --secondary-text-color : #707070;
+  --white-color : #ffffff;
+  --box-shadow : rgba(0, 0, 0, 0.1);
+  --card-color : #195AAF05
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--white-color);
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+a{
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+.box-animation{
+  border : 0px solid transparent;
+  transition: 0.5s linear;
+}
+
+.box-animation:hover{
+  border: 2px solid var(--primary-color);
+}
+
+/* ------------------------------- NAV BAR -------------------------------- */
+
+.navbar {
+  z-index:100;
+  height: 55px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#55679C0D;
+  border-bottom: 2px solid #DEE5F8
+}
+
+.nav-content{
+  width: 65%;
+  height: 62.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .navbar-brand {
+  font-family: "Montserrat";
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 34.13px;
+  text-align: left;
+} */
+
+.navbar-brand img {
+  height: 35px;
+  width: auto;
+  align-items: center;
+}
+
+.login-btn {
+  width: 150px;
+  height: 40px;
+  padding: 8px 52px 8px 52px;
+  background-color: var(--btn-color);
+  color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #04081be2;
+}
+
+/* ------------------- LINEAR GRADIENT ----------------------- */
+
+.linear-gradient{
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 59.63%, rgba(194, 208, 248, 0.5) 100%);
+
+}
+
+/* ------------------------ WELCOME CONTAINER -------------------- */
+
+
+
+/* Student   */
+.cont1 {
+  background-color: #F6F7FA;
+  width: 95vw; /* Adjusted from 1,575px to full viewport width */
+  height: 35vh;
+  margin: 5vh; /* Adjusted from 50px */
+  padding: 7.3vh 12.1vw; /* Adjusted from 73px, 121px */
+  top: 17.8vh; /* Adjusted from 178px */
+  border-radius: 1.2vw;
+  padding-left: 5vw; /* Adjusted from 50px */
+  padding-right: 5vw;
+}
+
+.profile {
+  height: 12vw; /* Adjusted from 170px */
+  width: 12vw; /* Adjusted to maintain a square */
+  border-radius: 50%;
+  background-color: #D9D9D9;
+  margin: 4vh; /* Adjusted from 40px */
+}
+
+.name {
+
+  
+  text-align: center;
+  font-size: 2vw; /* Adjusted from 30px */
+  font-weight: 600;
+}
+
+.c1 {
+  
+  height: 35vh; /* Adjusted from 16rem */
+  width: 20vw; /* Adjusted from 20rem */
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 8vh;
+
+}
+
+.span {
+  color: #55679C;
+}
+
+.c2 {
+  
+  width: 25vw; /* Adjusted from 19rem */
+  height: 15vh; /* Adjusted from 14rem */
+  margin: 4vh; /* Adjusted from 40px */
+  margin-top: 4vh; /* Adjusted from 63px */
+  font-size: 1.3vw; /* Adjusted from 1.5rem */
+  font-weight: 600;
+}
+
+.c3 {
+  
+  width: 25vw; /* Adjusted from 19rem */
+  height: 15vh; /* Adjusted from 147px */
+  margin-top: 4vh; /* Adjusted from 63px */
+  font-size: 1.3vw; /* Adjusted from 1.5rem */
+  font-weight: 600;
+}
+
+.cont2 {
+  border-radius: 1.2vw;
+ 
+  width: 58vw;
+  background-color: #F6F7FA;
+  height: 55vh; /* Adjusted from 600px */
+  padding: 4.2vh 4.5vw; /* Adjusted from 42px, 45px */
+  position: relative;
+  top: 1vh;
+  left: 3vw;
+}
+
+.per {
+  
+  width: 35vw; /* Adjusted from 910px */
+  height: 3.9vh; /* Adjusted from 39px */
+  font-size: 2vw; /* Adjusted from 30px */
+  font-weight: 600;
+  padding: 2vh; /* Adjusted from 20px */
+  padding-left: 0%;
+}
+
+.per-box {
+  
+ 
+  width: 55vw; /* Adjusted from 25rem */
+  height: 35vh; /* Adjusted from 290px */
+  background-color: #D9D9D9;
+  margin: 3vh; /* Adjusted from 30px */
+  margin-top: 5vh;
+  margin-left: 0%;
+}
+
+.per-txt {
+  
+  width: 35vw; /* Adjusted from 15rem */
+  height: 39vh; /* Adjusted from 7rem */
+  font-size: 1.3vw; /* Adjusted from 1.3rem */
+  font-weight: 600;
+  padding-bottom: 1vh; /* Adjusted from 10px */
+  padding-right: 3vw; /* Adjusted from 50px */
+  /* Adjusted from 20px */
+}
+
+.pp {
+  
+  color: #55679C;
+  margin-bottom: 0%;
+  margin-top: 5vh;
+}
+
+.cont3 {
+  border-radius: 1.2vw;
+  height: 55vh;
+ 
+  background-color: #F6F7FA;
+  width: 32vw;
+   /* Adjusted from 500px */
+  margin-top: 1vh;
+  margin-left: 5vw; /* Adjusted from 80px */
+  
+}
+
+.atend {
+  text-align: center;
+  
+  font-size: 2vw; /* Adjusted from 32px */
+  font-weight: 600;
+  padding: 2vh; /* Adjusted from 20px */
+  
+}
+
+.down {
+  margin-bottom: 7vh; /* Adjusted from 70px */
+}
+
+.bt {
+  background-color: #04081B;
+  color: #ffffff;
+  border-radius: 0.8vw; /* Adjusted from 8px */
+  width: 20vw; /* Adjusted from 200px */
+  height: 6vh; /* Adjusted from 60px */
+  padding: 2.3vh 7.4vw; /* Adjusted from 23px, 74px */
+  position: relative;
+  top: 3vh; /* Adjusted from 30px */
+  left: 5vw; /* Adjusted from 50px */
+  margin-bottom: 9vh; /* Adjusted from 90px */
+}
+
+.pic {
+  position: relative;
+  left: 90vw; /* Adjusted from 90% */
+  bottom: 17vh; /* Adjusted from 170px */
+}
+
+.p2 {
+  border-style: dashed;
+  border-color: #DEE5F8;
+  width: 20vw; /* Adjusted from 200px */
+  height: 7vh; /* Adjusted from 70px */
+  padding: 1vh; /* Adjusted from 10px */
+  position: relative;
+  left: 80vw; /* Adjusted from 80% */
+  bottom: 22vh; /* Adjusted from 220px */
+}
+
+.doubt {
+  color: #DEE5F8;
+  text-align: right;
+}
+
+.doubt-below {
+  padding-bottom: 1vh; /* Adjusted from 10px */
+}
+/*----------------- Progress Bar --------------------------------*/
+.progress-1{
+  
+  height: 10vw;
+  width: 30vw;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  margin: 4px;
+  float:none;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 3vw;
+}
+.progress-2{
+ 
+  height: 10vw;
+  width: 30vw;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  margin: 4px;
+  float:none;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+.barOverflow{ /* Wraps the rotating .bar */
+  position: relative;
+  left: 40%;
+  overflow: hidden; /* Comment this line to understand the trick */
+  width: 90px; height: 45px; /* Half circle (overflow) */
+  /*margin-top:10px; /* bring the numbers up */
+  
+  box-shadow:  rgba(0, 0, 0, 0.09);
+}
+.percentage-number-1{
+  position: relative;
+  top: 7%;
+  left:0%;
+  width: fit-content;
+  text-align: center;
+}
+.percentage-number-2{
+  position: relative;
+  top: 7%;
+  left:0%;
+  width: fit-content;
+  text-align: center;
+}
+.bar-1{
+ 
+  position: absolute;
+  
+  align-items: center;
+  align-content: center;
+  width: 90px; height: 90px; /* full circle! */
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 10px solid rgba(60, 232, 63, 1);     /* half gray, */
+  border-bottom-color:  10px solid rgba(63, 63, 63, 0.19);  /* half azure */
+  border-right-color: rgba(63, 63, 63, 0.19); 
+}
+.progress-course
+{
+  
+  height: 4vh;
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+  width: 30vw;
+  position: relative;
+  top: 2vw;
+  font-weight: 600;
+  font-size: 1.3vw  ;
+  text-align: center;
+  
+  
+}
+/*-------------------------------------------------------------------------*/
+

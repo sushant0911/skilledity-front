@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --primary-color : #55679C;
+  --btn-color : #04081B;
+  --primary-text-color : #000000;
+  --secondary-text-color : #707070;
+  --white-color : #ffffff;
+  --box-shadow : rgba(0, 0, 0, 0.1);
+  --card-color : #195AAF05
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--white-color);
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+a{
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+.box-animation{
+  border : 0px solid transparent;
+  transition: 0.5s linear;
+}
+
+.box-animation:hover{
+  border: 2px solid var(--primary-color);
+}
+
+/* ------------------------------- NAV BAR -------------------------------- */
+
+.navbar {
+  z-index:100;
+  height: 55px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#55679C0D;
+  border-bottom: 2px solid #DEE5F8
+}
+
+.nav-content{
+  width: 65%;
+  height: 62.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand img {
+  height: 35px;
+  width: auto;
+  align-items: center;
+}
+
+.login-btn {
+  width: 150px;
+  height: 40px;
+  padding: 8px 52px 8px 52px;
+  background-color: var(--btn-color);
+  color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #04081be2;
+}
+
+/* ------------------- LINEAR GRADIENT ----------------------- */
+
+.linear-gradient{
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 59.63%, rgba(194, 208, 248, 0.5) 100%);
+
+}
+
+/* ------------------------ WELCOME CONTAINER -------------------- */
+
+
+
+/* Student   */
+.cont1
+{
+
+}
+.profile
+{
+  height: 250px;
+  width: 250px;
+  border-radius: 100%;
+  background-color: #D9D9D9;
+}
+.name{
+  text-align: center;
+  font-size: 1.667vw;
+}
+/* student details */
+
+
+
+.details {
+  height: 26.667vw;
+  width: 41.67vw;
+  position: relative;
+  top:7.77vw;
+  left: 15.21vw;
+  margin: 1.61vw;
+  border-color: #000000;
+  border: 1px;
+  position: relative;
+}
+
+.schnam {
+  height: 100px;
+  width: 22.45vw;
+  
+ 
+}
+
+.student-details {
+  font-size: 1.25vw;
+ 
+  gap: 0.521vw;
+}
+
+.student-list {
+  list-style: none;
+  list-style-position: inside;
+  margin-left: 0px;
+  margin-top: 1%;
+}
+
+.student-list-element {
+  width: 56.30vw;
+  height: 80px;
+  margin: 1.30vw;
+  padding: 1.30vw;
+  padding-top: 0.89vw;
+  background-color: rgba(246, 247, 250, 1);
+  margin-left: 0%;
+  
+  border-radius: 0.42vw;
+}
+
+.student-details-info {
+  margin-top: 0.96vw;
+  height: 1.25vw;
+  width: 1.25vw;
+}
+
+.student-logo {
+  background-color: rgba(255, 254, 255, 1);
+  border-radius: 100%;
+  border: 1.5px solid rgba(154, 154, 154, 1);
+  height: 3.44vw;
+  width: 3.44vw;
+  text-align: center;
+  margin-right: 1.30vw;
+  padding: 0.94vw 1.25vw;
+  font-size: 1.25vw;
+}
+
+.student-name {
+  width: 10.31vw;
+  height: 1.51vw;
+  margin-top: 0.96vw;
+}
+
+.student-add {
+  height: 5.21vw;
+  width: 56.30vw;
+  padding: 0.89vw 1.15vw;
+  gap: 0.52vw;
+  border-radius: 0.42vw;
+  border: 1px solid rgba(222, 229, 248, 1);
+  opacity: 0px;
+}
+
+.student-add-content {
+  height: 2.55vw;
+  width: 8.59vw;
+  font-size: 1.04vw;
+  text-align: center;
+  position: relative;
+  left:40%;
+  top: 30%;
+}
+
+.student-add-plus {
+  height: 2.55vw;
+  width: 1.25vw;
+  font-size: 2.08vw;
+  position: relative;
+  top: 8%;
+  left: 42%;
+}
+
+/*-----------------------------------*/
+
+
+
+
+
+
+/* ------------------- MEDIA QUERIES --------------------- */
+/* ================================ SCHOOL DASHBOARD ================================ */
+
+.studentDetails-container {
+  width: 100%;
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.studentDetails-title {
+  width: 31.25vw;
+  margin-top: 7vh;
+}
+
+.studentDetails-title h1 {
+  font-size: 2.7vw;
+}
+
+.studentDetails-title span {
+  color: rgba(85, 103, 156, 1);
+}
+
+.studentDetails-title p {
+  font-size: 0.9vw;
+  color: var(--secondary-text-color);
+  margin-top: -1vh;
+  position: relative;
+  left: 2vw;
+  line-height: 2.9vw;
+}
+
+/*---------- CSV ------------------*/
+
+#csv-upload-form {
+  width: 43.75vw;
+  height: 17.875vh;
+}
+
+.dropzone {
+  border: 1px dashed rgba(85, 103, 156, 1);
+  border-radius: 0.8vw;
+  background: rgba(255, 255, 255, 1);
+  padding: 3vw;
+}
+
+.drag-area {
+  border: 2px dashed #000000;
+  height: 31.25vh;
+  width: 43.75vw;
+  border-radius: 0.5vw;
+  display: flex;
+  align-items: center;
+}
+
+.dz-message {
+  color: #007bff;
+  font-size: 1.2vw;
+}
+
+.registerstudent-csv {
+  width: 61.25vw;
+  height: 30.375vh;
+  position: relative;
+  bottom: 60.25vh;
+  left: 25.75vw;
+  text-align: center;
+}
+
+.register-csv-content {
+  position: relative;
+  top: 0.625vh;
+}
+
+.registerstudent-upload {
+  font-size: 1.75vw;
+  font-weight: 600;
+  margin: 0.75vw;
+  text-align: center;
+  position: relative;
+  right: 9.375vw;
+}
+
+.upload-img{
+
+  height: 3.75vw;
+  width: 3.333vw;
+
+}
+/*----------Proceed----------*/
+
+.csv-btn-container {
+  position: relative;
+  top: 7vw;
+  right: 33vw;
+}
+
+.csv-btn-container button {
+  width: 16vw;
+  height: 4vh;
+  font-size: 1.4vw;
+  font-weight: 500;
+  line-height: 2.438vw;
+  background: #195AAF05;
+  border-radius: 6.8vw;
+  border: 0px solid transparent;
+  box-shadow: 0px 1px 14px 0px #00000012;
+  font-family: "Montserrat", sans-serif;
+ 
+}
+
+.csv-upload-btn {
+  width: 12vw;
+  height: 3.5vh;
+  padding: 0.8vw 5.2vw;
+  background-color: #0028f0;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 0.8vw;
+  cursor: pointer;
+  font-size: 0.875vw;
+  position: relative;
+  left: 25vw;
+  bottom: 3vh;
+}
+
+.csv-upload-btn .text {
+  font-weight: 600;
+  position: relative;
+  bottom: 1.5vh;
+}
+

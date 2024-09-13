@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/dropzone.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/min/dropzone.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School Login Page</title>
+    <script
+      src="https://kit.fontawesome.com/e2a5af85b3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-content">
+        <div class="navbar-brand">
+          <img src="assets/images/Group 44.png" alt="Skilledity" />
+        </div>
+        <button class="login-btn">Logout</button>
+      </div>
+    </nav>
+    <div class="studentDetails-container">
+      <div class="studentDetails-title">
+        <h1>Register <span>student!</span></h1>
+        <p>Register your student by uploading a CSV file.</p>
+      </div>
+    </div>
+
+    <div class="registerstudent-csv d-flex flex-column">
+      <div class="registerstudent-upload">Upload CSV</div>
+      <form id="csv-upload-form" class="dropzone" id="csv-dropzone">
+        <div class="register-csv-content">
+          <img src="assets/images/rename.png" class="upload-img" />
+          <div class="dz-message" style="text-align: center">
+            Drop CSV file here or click to upload
+          </div>
+        </div>
+      </form>
+
+      <div class="proceed-btn-container">
+        <button class="studentDetails-proceed-btn" type="submit">
+          <span class="text">Proceed</span>
+          <span class="icon"><i class="fa-solid fa-chevron-right"></i></span>
+        </button>
+      </div>
+    </div>
+
+    <script>
+      Dropzone.autoDiscover = false;
+      const csvDropzone = new Dropzone("#csv-dropzone", {
+        url: "/upload",
+        acceptedFiles: ".csv",
+        maxFiles: 1,
+        init: function () {
+          this.on("success", function (file, response) {
+            console.log(response);
+          });
+        },
+      });
+      /*
+
+const dropArea = document.querySelector(".drag-area"),
+dragText = dropArea.querySelector("header"),
+button = dropArea.querySelector("button"),
+input = dropArea.querySelector("input");
+let file; //this is a global variable and we'll use it inside multiple functions
+button.onclick = ()=>{
+  input.click(); //if user click on the button then the input also clicked
+}
+input.addEventListener("change", function(){
+  //getting user select file and [0] this means if user select multiple files then we'll select only the first one
+  file = this.files[0];
+  dropArea.classList.add("active");
+  showFile(); //calling function
+});*/
+    </script>
+  </body>
+</html>
