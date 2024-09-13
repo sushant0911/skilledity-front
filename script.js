@@ -15,3 +15,58 @@ options.forEach(option =>{
         optionMenu.classList.remove("active");
     });
 });
+
+// Student Registration
+
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('registration-form');
+    
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const name = document.getElementById('name').value;
+        const fatherName = document.getElementById('father-name').value;
+        const dobDD = document.getElementById('dob-dd').value;
+        const dobMM = document.getElementById('dob-mm').value;
+        const dobYYYY = document.getElementById('dob-yyyy').value;
+        const gender = document.querySelector('input[name="gender"]:checked');
+        const contact = document.getElementById('contact').value;
+        const email = document.getElementById('email').value;
+        const admissionNo = document.getElementById('admission-no').value;
+
+        if (!name || !fatherName || !dobDD || !dobMM || !dobYYYY || !gender || !contact || !email || !admissionNo) {
+            alert('Please fill in all fields');
+            return;
+        }
+
+        alert('Form submitted successfully!');
+        form.reset();
+    });
+});
+
+// Gender Card Active Status
+
+document.addEventListener("DOMContentLoaded", function() {
+    const genderCards = document.querySelectorAll('.gender-card');
+    genderCards.forEach(card => {
+        card.addEventListener('click', function() {
+            genderCards.forEach(c => c.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+});
+
+// Sidebar Options
+
+// Toggle Sidebar
+document.querySelector('.fa-bars').addEventListener('click', function() {
+    const sidebar = document.getElementById('sidebar');
+    sidebar.classList.toggle('active');
+  });
+  
+  // Close Sidebar on Login Button Click (optional)
+  document.getElementById('sidebarLoginBtn').addEventListener('click', function() {
+    const sidebar = document.getElementById('sidebar');
+    sidebar.classList.remove('active');
+  });
+  

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Details</title>
+    <script
+      src="https://kit.fontawesome.com/e2a5af85b3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-content">
+        <div class="navbar-brand">
+          <a href="index.html"><img src="assets/images/Group 44.png" alt="Skilledity"></a>
+        </div>
+        <button class="login-btn">Login</button>
+      </div>
+    </nav>
+    <div class="registration-container">
+      <div class="registration-box">
+        <form class="registration-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter the Student's full name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="father-name">Father's Name</label>
+            <input
+              type="text"
+              id="father-name"
+              placeholder="Enter the Student's Father name"
+            />
+          </div>
+          <div class="form-group dob-contact-group">
+            <div class="dob-section">
+              <label for="dob">Date of Birth  <img src="assets/images/solar_calendar-broken.png" alt="Calendar" width="18px" height="18px"></label>
+              <div class="dob-inputs">
+                <input type="text" placeholder="DD" maxlength="2" />
+                <input type="text" placeholder="MM" maxlength="2" />
+                <input type="text" placeholder="YYYY" maxlength="4" />
+              </div>
+            </div>
+            <div class="contact-section">
+              <label for="contact">Contact no.</label>
+              <div class="contact-input">
+                <input
+                  type="text"
+                  id="contact"
+                  placeholder="Enter Student phone number"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="gender-selection">
+              <label for="gender">Gender</label>
+              <div class="gender-options">
+                <div class="gender-card">
+                  <div class="icon">
+                    <span><i class="fa-solid fa-mars"></i></span>
+                  </div>
+                  <span class="label-text">Male</span>
+                </div>
+          
+                <div class="gender-card">
+                  <div class="icon">
+                    <span><i class="fa-solid fa-venus"></i></span>
+                  </div>
+                  <span class="label-text">Female</span>
+                </div>
+          
+                <div class="gender-card">
+                  <div class="icon">
+                    <span><i class="fa-solid fa-mars-and-venus"></i></span>
+                  </div>
+                  <span class="label-text">Other</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="school-admission">School Admission no.</label>
+            <input
+              type="text"
+              id="school-admission"
+              placeholder="Enter Student Registration no."
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter Student Email Address"
+            />
+          </div>
+        </form>
+        <div class="proceed-btn-container">
+          <button class="studentDetails-proceed-btn" type="submit">
+            <span class="text">Proceed</span>
+            <span class="icon"><i class="fa-solid fa-chevron-right"></i></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
