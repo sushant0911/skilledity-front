@@ -60,8 +60,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Toggle Sidebar
 document.querySelector('.fa-bars').addEventListener('click', function() {
+    console.log("Clicked");
     const sidebar = document.getElementById('sidebar');
-    sidebar.classList.toggle('active');
+    sidebar.classList.add('active');
   });
   
   // Close Sidebar on Login Button Click (optional)
@@ -69,4 +70,15 @@ document.querySelector('.fa-bars').addEventListener('click', function() {
     const sidebar = document.getElementById('sidebar');
     sidebar.classList.remove('active');
   });
+
+
+            // function myFunction() {
+            //   var x = document.getElementById("myLinks");
+            //   if (x.style.display === "block") {
+            //     x.style.display = "none";
+            //   } else {
+            //     x.style.display = "block";
+            //   }
+            // }
+    
   
